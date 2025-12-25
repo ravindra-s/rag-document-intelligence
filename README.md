@@ -85,8 +85,7 @@ Retrieval (`retrieval-k`) is optimized for recall, while context selection (`con
 **Example:**
 
 ```bash
-python scripts/query.py --retrieval-k 8 --context-k 4
-```
+python scripts/query.py --retrieval-k 8 --context-k 4```
 ---
 ## Models
 

@@ -1,4 +1,4 @@
-# RAG Document Intelligence (Local)
+# RAG Document Intelligence
 
 A modular, local **Retrieval-Augmented Generation (RAG)** pipeline for document intelligence.  
 Designed for applied AI engineering with explicit ingestion, chunking, embedding, retrieval, and generation stages.
@@ -23,7 +23,7 @@ python --version
 ## Setup
 
 ```bash
-git clone <repo-url>
+git clone git clone https://github.com/ravindra-s/rag-document-intelligence.git
 cd rag-document-intelligence
 python -m venv .venv
 ```
@@ -32,7 +32,7 @@ Activate virtual environment:
 
 **Windows (PowerShell)**
 ```powershell
-.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 ```
 
 **Linux / macOS**
@@ -65,7 +65,7 @@ python scripts/ingest.py
 python scripts/chunk.py
 python scripts/embed.py
 python scripts/query.py
-python scripts/query.py --retrieval-k 8 --context-k 4 #optionl arguments
+python scripts/query.py --retrieval-k 8 --context-k 4 #optional arguments
 ```
 
 The final step starts an **interactive query loop**.

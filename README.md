@@ -65,6 +65,7 @@ python scripts/ingest.py
 python scripts/chunk.py
 python scripts/embed.py
 python scripts/query.py
+python scripts/query.py --retrieval-k 8 --context-k 4 #optionl arguments
 ```
 
 The final step starts an **interactive query loop**.

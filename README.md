@@ -32,7 +32,7 @@ Activate virtual environment:
 
 **Windows (PowerShell)**
 ```powershell
-.venv\Scripts\activate
+.venv\Scripts\Activate.ps1
 ```
 
 **Linux / macOS**

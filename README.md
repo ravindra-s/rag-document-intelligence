@@ -64,7 +64,7 @@ The pipeline is intentionally modular. Each stage can be executed independently.
 python scripts/ingest.py
 python scripts/chunk.py
 python scripts/embed.py
-python scripts/query.py --retrieval-k 8 --context-k 4
+python scripts/query.py
 ```
 
 The final step starts an **interactive query loop**.
@@ -83,8 +83,10 @@ The query step exposes two parameters to control retrieval and context selection
 Retrieval (`retrieval-k`) is optimized for recall, while context selection (`context-k`) is constrained by LLM context limits and generation quality.
 
 **Example:**
+
 ```bash
 python scripts/query.py --retrieval-k 8 --context-k 4
+```
 ---
 ## Models
 

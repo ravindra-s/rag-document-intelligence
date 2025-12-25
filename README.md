@@ -82,11 +82,8 @@ The query step exposes two parameters to control retrieval and context selection
 **Why both exist:**  
 Retrieval (`retrieval-k`) is optimized for recall, while context selection (`context-k`) is constrained by LLM context limits and generation quality.
 
-**Example:**
-
-```bash
-python scripts/query.py --retrieval-k 8 --context-k 4```
 ---
+
 ## Models
 
 ### Embeddings

@@ -69,7 +69,6 @@ python scripts/query.py --retrieval-k 8 --context-k 4
 
 The final step starts an **interactive query loop**.
 
----
 ### Retrieval Parameters
 
 The query step exposes two parameters to control retrieval and context selection:
@@ -86,7 +85,7 @@ Retrieval (`retrieval-k`) is optimized for recall, while context selection (`con
 **Example:**
 ```bash
 python scripts/query.py --retrieval-k 8 --context-k 4
-
+---
 ## Models
 
 ### Embeddings

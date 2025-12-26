@@ -13,7 +13,6 @@ class Settings(BaseSettings):
     # Models
     embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
     #llm_model_name: str = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-    #llm_model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"
     llm_model_name: str = "Qwen/Qwen2.5-0.5B-Instruct"
 
     model_config = SettingsConfigDict(

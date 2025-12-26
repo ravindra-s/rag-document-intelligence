@@ -75,8 +75,6 @@ def main() -> None:
         max_new_tokens=args.max_new_tokens,
     )
 
-    #print("\n=== Answer ===")
-    #print(answer.strip())
     logger.info(answer)
 
     #print("\n=== Sources (chunk_ids) ===")

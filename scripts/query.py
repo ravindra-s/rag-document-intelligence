@@ -11,7 +11,6 @@ from rag.generation.prompts import grounded_qa_prompt
 from rag.logging_config import configure_logging
 from rag.retrieval.store import FaissVectorStore
 
-
 def _load_chunk_texts(chunks_path: Path) -> dict[str, str]:
     chunk_map: dict[str, str] = {}
     with chunks_path.open("r", encoding="utf-8") as f:
@@ -80,7 +79,6 @@ def main() -> None:
     #print("\n=== Sources (chunk_ids) ===")
     #for cid in sources:
     #    print("-", cid)
-
 
 if __name__ == "__main__":
     main()

@@ -10,7 +10,6 @@ from rag.generation.llm import LocalLLM
 from rag.generation.prompts import grounded_qa_prompt
 from rag.retrieval.store import FaissVectorStore
 
-
 def _load_chunk_texts(chunks_path: Path) -> dict[str, str]:
     chunk_map: dict[str, str] = {}
     with chunks_path.open("r", encoding="utf-8") as f:

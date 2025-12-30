@@ -4,11 +4,9 @@ from typing import Any
 
 from rag.models import Chunk, Document
 
-
 def _stable_chunk_id(document_id: str, index: int, text: str) -> str:
     h = hashlib.sha1(text.encode("utf-8")).hexdigest()[:8]
     return f"{document_id}_chunk_{index}_{h}"
-
 
 def chunk_document(
     document: Document,
@@ -24,7 +22,6 @@ def chunk_document(
     - Merge paragraphs until max_chars is reached
     - Apply character overlap between consecutive chunks
     """
-
     paragraphs = [
         p.strip()
         for p in document.text.split("\n\n")
@@ -76,7 +73,6 @@ def chunk_document(
         )
 
     return chunks
-
 
 def chunk_documents(
     documents: list[Document],

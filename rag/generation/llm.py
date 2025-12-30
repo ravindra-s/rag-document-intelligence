@@ -53,13 +53,16 @@ class LocalLLM:
         )
 
     def generate(self, prompt: str, *, max_new_tokens: int = 256) -> str:
+        logger.info("=================================")
+        logger.info(f"Prompt received in llm.generate() : ")
+        logger.info(prompt)
         inputs = self.tokenizer(
             prompt,
             return_tensors="pt",
             truncation=True,
             max_length=self.tokenizer.model_max_length,
         )
-
+        
         prompt_len = inputs["input_ids"].shape[1]
 
         with torch.no_grad():

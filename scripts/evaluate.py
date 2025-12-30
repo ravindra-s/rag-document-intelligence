@@ -2,13 +2,11 @@ import argparse
 import logging
 from pathlib import Path
 
-
 import pandas as pd
 
 from rag.config import settings
 from rag.evaluation.runner import EvaluationRunner
 from rag.logging_config import configure_logging
-
 
 def short_model_name(model_name: str) -> str:
     """
@@ -130,7 +128,6 @@ def main() -> None:
         result_df.to_csv(output_path, index=False)
 
     logger.info("Evaluation complete. Results written to %s", output_path)
-
 
 if __name__ == "__main__":
     main()

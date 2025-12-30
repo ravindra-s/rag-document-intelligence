@@ -6,7 +6,6 @@ from rag.ingestion.loader import load_pdfs_from_dir
 from rag.ingestion.serializer import save_documents
 from rag.logging_config import configure_logging
 
-
 def main() -> None:
     configure_logging()
     logger = logging.getLogger(__name__)

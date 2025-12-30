@@ -2,7 +2,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-
 @dataclass(frozen=True)
 class Document:
     id: str
@@ -10,14 +9,12 @@ class Document:
     source: Path
     metadata: dict[str, Any]
 
-
 @dataclass(frozen=True)
 class Chunk:
     id: str
     document_id: str
     text: str
     metadata: dict[str, Any]
-
 
 @dataclass(frozen=True)
 class EmbeddingRecord:

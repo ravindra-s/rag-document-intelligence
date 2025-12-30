@@ -4,7 +4,6 @@ from pathlib import Path
 import faiss
 import numpy as np
 
-
 class FaissVectorStore:
     def __init__(self, dimension: int) -> None:
         self.index = faiss.IndexFlatIP(dimension)

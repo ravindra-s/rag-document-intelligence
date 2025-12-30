@@ -1,6 +1,5 @@
 from typing import Any
 
-
 def build_context(
     retrieved: list[dict[str, Any]],
     chunk_texts: dict[str, str],
